@@ -55,7 +55,6 @@ public class CartoonsActivity extends AppCompatActivity
             {
                 Intent changeScreen = new Intent(buttonView.getContext(), GamesActivity.class);
                 startActivityForResult(changeScreen, 0);
-                finish();
             }
         });
     }

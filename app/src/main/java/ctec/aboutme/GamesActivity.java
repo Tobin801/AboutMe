@@ -18,6 +18,7 @@ public class GamesActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_games);
         goToScreen4 = (Button) findViewById(R.id.goToScreen4);
+        setupListeners();
     }
 
     @Override
@@ -44,16 +45,17 @@ public class GamesActivity extends AppCompatActivity
 
         return super.onOptionsItemSelected(item);
     }
+
     private void setupListeners()
     {
         goToScreen4.setOnClickListener(new View.OnClickListener()
         {
-           public void onClick(View buttonView)
-           {
-               Intent changeScreen = new Intent(buttonView.getContext(), FoodActivity.class);
-               startActivityForResult(changeScreen, 0);
-               finish();
-           }
+            public void onClick(View buttonView)
+            {
+                Intent changeScreen = new Intent(buttonView.getContext(), FoodActivity.class);
+                startActivityForResult(changeScreen, 0);
+                finish();
+            }
         });
     }
 }

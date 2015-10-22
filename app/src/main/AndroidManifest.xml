@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ctec.aboutme" >
+    package="ctec.aboutme">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,20 +18,16 @@
         </activity>
         <activity
             android:name=".CartoonsActivity"
-            android:label="@string/title_activity_cartoons" >
-        </activity>
+            android:label="@string/title_activity_cartoons"></activity>
         <activity
             android:name=".GamesActivity"
-            android:label="@string/title_activity_games" >
-        </activity>
+            android:label="@string/title_activity_games"></activity>
         <activity
             android:name=".FoodActivity"
-            android:label="@string/title_activity_food" >
-        </activity>
+            android:label="@string/title_activity_food"></activity>
         <activity
             android:name=".ComputersActivity"
-            android:label="@string/title_activity_computers" >
-        </activity>
+            android:label="@string/title_activity_computers"></activity>
     </application>
 
 </manifest>
